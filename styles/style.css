@@ -1,1 +1,87 @@
 /* место для вашего кода */
+
+.header {
+  display: grid;
+  grid-template-columns: 1fr 148px 1fr;
+  grid-template-rows: 1fr;
+  align-items: center;
+  padding: 92px 50px 96px 50px;
+}
+
+/* TODO скорректировать расстояние между пунктами меню 
+- замерить Pixel Perfect Plugin и подгонка через инструменты разработчика.*/
+
+.header__links-list {
+  display: flex;
+  gap: 25px;
+  color: #000;
+  font-size: 18px;
+  letter-spacing: 0.01em;
+  list-style: circle;
+}
+
+.header__links-list-item_no-bullet {
+  list-style: none;
+}
+
+.header__link_active {
+  letter-spacing: 0;
+  text-decoration-style: none;
+}
+
+.address {
+  width: 240.52px;
+  height: 98;
+  color: #000;
+  font-size: 18px;
+  line-height: 135%;
+}
+
+.address a {
+  letter-spacing: 0.01em;
+}
+.header__address {
+  justify-self: end;
+}
+
+.cover {
+  position: relative;
+  background-image: url(../images/cover.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.overlay {
+  background-color: rgb(0 0 0 / 0.6);
+}
+
+.cover__title {
+  color: #fff;
+  font-weight: 700;
+  font-size: 100px;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+}
+
+.aligned-text {
+  display: block;
+  line-height: 115%;
+}
+
+.aligned-text_center {
+  line-height: 1;
+  text-align: center;
+}
+
+.aligned-text_right {
+  line-height: 1;
+  text-align: right;
+}
+
+.cover__title .aligned-text .letter-spacing-extended {
+  letter-spacing: 0.6em;
+}
+.cover__title .aligned-text .no-letter-spacing {
+  letter-spacing: 0;
+}
