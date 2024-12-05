@@ -53,10 +53,16 @@
 }
 
 .overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
   background-color: rgb(0 0 0 / 0.6);
 }
 
 .cover__title {
+  position: relative;
+  margin: 0 50px 135px 50px;
+  padding-top: 165px;
   color: #fff;
   font-weight: 700;
   font-size: 100px;
@@ -84,4 +90,124 @@
 }
 .cover__title .aligned-text .no-letter-spacing {
   letter-spacing: 0;
+}
+
+.cover__description {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 50px 50px 78px;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.cover__description-text {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 127%;
+  letter-spacing: normal;
+  word-spacing: 14px;
+}
+
+.bet-button {
+  width: 256px;
+  height: 51px;
+  border: 1px solid #fff;
+  padding: 12px 32px 11px 31px;
+  background: transparent;
+}
+
+.bet-button-text {
+  color: #fff;
+  font-weight: 500;
+  font-size: 22px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.lots {
+  padding: 179px 24px 181px 24px;
+}
+
+.lots__heading {
+  color: #000;
+  font-weight: 700;
+  font-size: 40px;
+  text-transform: uppercase;
+  margin-left: 40px;
+  margin-bottom: 27px;
+}
+
+.lots__card-list {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+
+.lots__card-list-item {
+  width: 334px;
+  min-height: 563px;
+  flex-grow: 1;
+}
+
+.card-link {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 51px 40px 48px 40px;
+  justify-content: space-between;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.card_type_film {
+  background-image: url(../images/card-lot-01.jpg);
+}
+
+.card_type_book {
+  background-image: url(../images/card-lot-02.jpg);
+}
+
+.card_type_picture {
+  background-image: url(../images/card-lot-03.jpg);
+}
+
+.card__title {
+  color: #fff;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 120%;
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  text-transform: uppercase;
+  z-index: 1;
+}
+
+.card__text {
+  z-index: 1;
+  color: #fff;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 120%;
+}
+
+.lots__look-more-link {
+  display: inline-block;
+  font-weight: 400;
+  font-size: 20px;
+  color: #000;
+  margin-top: 30px;
+  margin-left: 40px;
 }
